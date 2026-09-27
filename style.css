@@ -460,6 +460,12 @@ section {
   display: block;
   font-size: 13px;
 }
+
+.contact-detail a {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+
 .contact-detail span {
   font-size: 13px;
   color: var(--muted);
