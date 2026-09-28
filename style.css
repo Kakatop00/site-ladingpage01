@@ -643,3 +643,46 @@ footer .brand-logo {
     height: 42px;
   }
 }
+
+
+/* Descrições do portfólio */
+.project-info span {
+  display: block;
+  margin-top: 5px;
+  max-width: 460px;
+  color: rgba(255,255,255,0.82);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+/* Projeto 5: recorte visual para esconder bordas de captura/print sem deformar a imagem */
+.project-5 {
+  min-height: 300px;
+}
+
+.project-5 img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: center bottom;
+  transform: scale(1.06);
+  transform-origin: center bottom;
+}
+
+.project-5::after {
+  z-index: 0;
+}
+
+.project-5 .project-info {
+  z-index: 2;
+}
+
+@media (max-width: 540px) {
+  .project-5 img {
+    height: 300px;
+    transform: scale(1.07);
+  }
+  .project-info span {
+    max-width: 100%;
+  }
+}
